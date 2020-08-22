@@ -1,0 +1,154 @@
+// CSS Style Guide: http://codeguide.co/#css
+
+
+$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
+
+$variables = base $scheme;
+
+
+// Variables Layer
+// --------------------------------------------------
+for $variable in $variables
+  @import "_variables/" + $variable;
+for $inject_variable in hexo-config('injects.variable')
+  @import $inject_variable;
+
+// Mixins Layer
+// --------------------------------------------------
+@import "_mixins.styl";
+for $inject_mixin in hexo-config('injects.mixin')
+  @import $inject_mixin;
+
+// Dark mode colors
+// --------------------------------------------------
+@import "_colors.styl";
+
+// Common Layer
+// --------------------------------------------------
+
+// Scaffolding
+@import "_common/scaffolding";
+
+// Layout
+@import "_common/outline";
+
+// Components
+@import "_common/components";
+
+
+// Schemes Layer
+// --------------------------------------------------
+@import "_schemes/" + $scheme;
+
+
+// Custom Layer
+// --------------------------------------------------
+for $inject_style in hexo-config('injects.style')
+  @import $inject_style;
+
+body {
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("http://www.dmoe.cc/random.php") no-repeat fixed center center/ cover;
+}
+.site-title {
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'comic sans';
+}
+.brand {
+  background: rgba(32,32,32,0.5);
+  border-radius: 1.375em;
+  transition: all .3s;
+}
+.brand:hover {
+  background-color: rgba(32,32,32,.7);
+  transform: translateY(-2px);
+}
+
+.site-title {
+  font: 700 2em 'Comic Sans MS';
+}
+/* side bar  */
+.sidebar {
+    opacity: 0.9;
+  }
+  .sidebar-toggle {
+    opacity: 0.9;
+    border-radius: 4px;
+  }
+  .site-author-name {
+    font-family: 'Comic Sans MS';
+  }
+  
+  /* main */
+  .post-button {
+    position: relative;
+  }
+  
+  .btn {
+      position: absolute; /*绝对对位*/
+      top: 50%; /*距上部*/
+      left: 50%; 
+      transform: translate(-50%,-50%); /*移动，根据X,Y轴*/
+      text-align: center; /*字体水平居中*/
+      color: #fff;
+      text-transform: uppercase; /*字体大写*/
+      text-decoration: none; /*字体增加装饰：去除下划线*/
+      font-family: sans-serif; /*非衬线体*/
+      box-sizing: border-box; /*盒模型大小规则*/
+      background-color: rgba(32,32,32,.5);
+      border-radius: 60px; /*边框圆角*/
+      background-size: 400%; /*背景大小*/
+      z-index: 1; /*层叠定位*/
+      outline: none;
+      border: 0;
+      opacity: .5;
+      transition: all .3s;
+    }
+    .btn:hover{
+      animation: animate 8s linear infinite alternate; /*动画: 名称 时间 线性 循环 播放完回退播放*/
+    }
+    @keyframes animate{
+      0%{
+        background-position: 0%; /*修改背景定位，实现渐变色炫光*/
+      }
+      50%{
+        background-position: 100%;
+      }
+      100%{
+        background-position: 0%;
+      }
+    }
+    .btn::before{ /*之前添加*/
+      content: ''; /*内容*/
+      position: absolute; /*绝对定位*/
+      top:-5px; /*当设置对立的2个定位属性时，元素的大小将由对立的大小决定*/
+      left: -5px;
+      right: -5px;
+      bottom: -5px; /*当设置对立的2个定位属性时，元素的大小将由对立的大小决定*/
+      z-index: -1; 
+      background: linear-gradient(
+        90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4, 
+      #f441a5, #ffeb3b, #03a9f4);
+      border-radius: 40px;
+      background-size: 400%;
+      filter: blur(10px); /*过渡：模糊*/
+      opacity: 0; /*透明度*/
+      transition: 1s; /*过渡时间*/
+    }
+    .btn:hover::before{
+      filter: blur(10px);
+      opacity: 1;
+      animation: animate 8s linear infinite; /*注意动画名称统一*/
+    }
+    .btn:hover {
+      opacity: 1;
+      color: #fff;
+      margin-top: -2px;
+    }
+  
+.post-block {
+  background-color: rgba(255,255,255,.5);
+}
+
+
+
