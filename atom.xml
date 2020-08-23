@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>UNDERCURRENT</title>
+  
+  
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-08-22T11:18:22.696Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Senkoi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记一次hexo多终端同步</title>
+    <link href="http://yoursite.com/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/"/>
+    <id>http://yoursite.com/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/</id>
+    <published>2020-08-22T10:36:41.000Z</published>
+    <updated>2020-08-22T11:18:22.696Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;将笔记本A中的hexo迁移至其它电脑B中。&quot;&gt;&lt;a href=&quot;#将笔记本A中的hexo迁移至其它电脑B中。&quot; class=&quot;headerlink&quot; title=&quot;将笔记本A中的hexo迁移至其它电脑B中。&quot;&gt;&lt;/a&gt;将笔记本A中的hexo迁移至其它电脑B中。&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;github新建分支’hexo’, 并设为默认分支。</summary>
+    
+    
+    
+    <category term="折腾" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE/"/>
+    
+    
+    <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>容易忘掉</title>
+    <link href="http://yoursite.com/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/"/>
+    <id>http://yoursite.com/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/</id>
+    <published>2020-08-19T14:47:56.000Z</published>
+    <updated>2020-08-22T09:51:30.354Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;box-shadow&quot;&gt;&lt;a href=&quot;#box-shadow&quot; class=&quot;headerlink&quot; title=&quot;box-shadow&quot;&gt;&lt;/a&gt;box-shadow&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="前端知识" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="html/css" scheme="http://yoursite.com/tags/html-css/"/>
+    
+    <category term="记住!" scheme="http://yoursite.com/tags/%E8%AE%B0%E4%BD%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>START</title>
+    <link href="http://yoursite.com/2020/08/19/start/"/>
+    <id>http://yoursite.com/2020/08/19/start/</id>
+    <published>2020-08-19T13:04:28.000Z</published>
+    <updated>2020-08-22T09:51:30.352Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;START&quot;&gt;&lt;a href=&quot;#START&quot; class=&quot;headerlink&quot; title=&quot;START&quot;&gt;&lt;/a&gt;START&lt;/h1&gt;&lt;p&gt;From &lt;strong&gt;here&lt;/strong&gt; on&lt;br&gt;&lt;strong&gt;Find&lt;/strong&gt; your limit&lt;br&gt;&lt;strong&gt;Get to&lt;/strong&gt; it  &lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="flag" scheme="http://yoursite.com/tags/flag/"/>
+    
+  </entry>
+  
+</feed>
