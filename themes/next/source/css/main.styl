@@ -69,86 +69,169 @@ body {
 }
 /* side bar  */
 .sidebar {
-    opacity: 0.9;
-  }
-  .sidebar-toggle {
-    opacity: 0.9;
-    border-radius: 4px;
-  }
-  .site-author-name {
-    font-family: 'Comic Sans MS';
-  }
-  
-  /* main */
-  .post-button {
-    position: relative;
-  }
-  
-  .btn {
-      position: absolute; /*绝对对位*/
-      top: 50%; /*距上部*/
-      left: 50%; 
-      transform: translate(-50%,-50%); /*移动，根据X,Y轴*/
-      text-align: center; /*字体水平居中*/
-      color: #fff;
-      text-transform: uppercase; /*字体大写*/
-      text-decoration: none; /*字体增加装饰：去除下划线*/
-      font-family: sans-serif; /*非衬线体*/
-      box-sizing: border-box; /*盒模型大小规则*/
-      background-color: rgba(32,32,32,.5);
-      border-radius: 60px; /*边框圆角*/
-      background-size: 400%; /*背景大小*/
-      z-index: 1; /*层叠定位*/
-      outline: none;
-      border: 0;
-      opacity: .5;
-      transition: all .3s;
-    }
-    .btn:hover{
-      animation: animate 8s linear infinite alternate; /*动画: 名称 时间 线性 循环 播放完回退播放*/
-    }
-    @keyframes animate{
-      0%{
-        background-position: 0%; /*修改背景定位，实现渐变色炫光*/
-      }
-      50%{
-        background-position: 100%;
-      }
-      100%{
-        background-position: 0%;
-      }
-    }
-    .btn::before{ /*之前添加*/
-      content: ''; /*内容*/
-      position: absolute; /*绝对定位*/
-      top:-5px; /*当设置对立的2个定位属性时，元素的大小将由对立的大小决定*/
-      left: -5px;
-      right: -5px;
-      bottom: -5px; /*当设置对立的2个定位属性时，元素的大小将由对立的大小决定*/
-      z-index: -1; 
-      background: linear-gradient(
-        90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4, 
-      #f441a5, #ffeb3b, #03a9f4);
-      border-radius: 40px;
-      background-size: 400%;
-      filter: blur(10px); /*过渡：模糊*/
-      opacity: 0; /*透明度*/
-      transition: 1s; /*过渡时间*/
-    }
-    .btn:hover::before{
-      filter: blur(10px);
-      opacity: 1;
-      animation: animate 8s linear infinite; /*注意动画名称统一*/
-    }
-    .btn:hover {
-      opacity: 1;
-      color: #fff;
-      margin-top: -2px;
-    }
-  
-.post-block {
-  background-color: rgba(255,255,255,.5);
+  opacity: 0.9;
+}
+.sidebar-toggle {
+  opacity: 0.9;
+  border-radius: 4px;
+}
+.site-author-name {
+  font-family: 'Comic Sans MS';
 }
 
+/* main */
+.post-button {
+  position: relative;
+}
 
+.btn {
+     position: absolute; /*绝对对位*/
+     top: 50%; /*距上部*/
+     left: 50%; 
+     transform: translate(-50%,-50%); /*移动，根据X,Y轴*/
+     text-align: center; /*字体水平居中*/
+     color: #fff;
+     text-transform: uppercase; /*字体大写*/
+     text-decoration: none; /*字体增加装饰：去除下划线*/
+     font-family: sans-serif; /*非衬线体*/
+     box-sizing: border-box; /*盒模型大小规则*/
+     background-color: rgba(32,32,32,.5);
+     border-radius: 60px; /*边框圆角*/
+     background-size: 400%; /*背景大小*/
+     z-index: 1; /*层叠定位*/
+     outline: none;
+     border: 0;
+     opacity: .5;
+     transition: all .3s;
+  }
+  .btn:hover{
+    animation: animate 8s linear infinite alternate; /*动画: 名称 时间 线性 循环 播放完回退播放*/
+  }
+  @keyframes animate{
+    0%{
+      background-position: 0%; /*修改背景定位，实现渐变色炫光*/
+    }
+    50%{
+      background-position: 100%;
+    }
+    100%{
+      background-position: 0%;
+    }
+  }
+  .btn::before{ /*之前添加*/
+    content: ''; /*内容*/
+    position: absolute; /*绝对定位*/
+    top:-5px; /*当设置对立的2个定位属性时，元素的大小将由对立的大小决定*/
+    left: -5px;
+    right: -5px;
+    bottom: -5px; /*当设置对立的2个定位属性时，元素的大小将由对立的大小决定*/
+    z-index: -1; 
+    background: linear-gradient(
+      90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4, 
+    #f441a5, #ffeb3b, #03a9f4);
+    border-radius: 40px;
+    background-size: 400%;
+    filter: blur(10px); /*过渡：模糊*/
+    opacity: 0; /*透明度*/
+    transition: 1s; /*过渡时间*/
+  }
+  .btn:hover::before{
+    filter: blur(10px);
+    opacity: 1;
+    animation: animate 8s linear infinite; /*注意动画名称统一*/
+  }
+  .btn:hover {
+    opacity: 1;
+    color: #fff;
+    margin-top: -2px;
+  }
+  
+.post-block {
+  position relative;
+  background-color: rgba(255,255,255,0.5);
+  transition: all .3s;
+  border-radius: 3px;
+}
+.post-block:hover {
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+  transform: translateY(-1px);
+}
+
+// follow me
+@keyframes ball_move {
+  0% {
+    opacity: 1;
+
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.followme {
+  position: absolute;
+  left: var(--ball-left);
+  top: var(--ball-top);
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  background-color: var(--ball-color);
+  transition: all var(--animation-time), height .3s, width .3s;
+  animation: ball_move var(--animation-time) linear infinite;
+  opacity: 1;
+  z-index: 1300;
+}
+
+.followme:hover {
+  animation-play-state: paused;
+  box-shadow: 2px 2px 6px rgba(0,0,0,1);
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  transform: translateY(-5px);
+}
+
+.followme p {
+  display: none;
+}
+
+.followme .social-list {
+  position: absolute;
+  top: -40px;
+  display: none;
+  height: 35px;
+  line-height: 1;
+  border-radius: 5px;
+  background-color: var(--ball-color);
+  opacity: 1;
+  
+}
+.followme .social-item {
+  float: left;
+  margin: 0 !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.followme .social-list .social-item a {
+  float: left;
+}
+
+.followme .social-list .social-item .social-link .icon {
+  font-size: 1.2em;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.followme .social-list .social-item .social-link .label {
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+}
 
