@@ -1,3 +1,4 @@
+// 我想吃屎
 var followBallX = Math.random();
 var followBallY = Math.random();
 var ball_left = 10;
