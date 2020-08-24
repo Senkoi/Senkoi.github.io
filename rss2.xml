@@ -9,7 +9,7 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 24 Aug 2020 14:06:08 GMT</pubDate>
+    <pubDate>Mon, 24 Aug 2020 15:03:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,7 @@
       <guid>http://yoursite.com/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/</guid>
       <pubDate>Mon, 24 Aug 2020 13:51:51 GMT</pubDate>
       
-      <description>&lt;img src=&quot;/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/CSS3.png&quot; class=&quot;&quot; title=&quot;This is an image&quot;&gt;
+      <description>&lt;img src=&quot;/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/CSS3.png&quot; class=&quot;&quot;&gt;
 &lt;h1 id=&quot;CSS-CSS3&quot;&gt;&lt;a href=&quot;#CSS-CSS3&quot; class=&quot;headerlink&quot; title=&quot;CSS/CSS3&quot;&gt;&lt;/a&gt;CSS/CSS3&lt;/h1&gt;&lt;p&gt;绿色字体为css3&lt;br&gt;蓝色字体为两者都有&lt;/p&gt;</description>
       
       
