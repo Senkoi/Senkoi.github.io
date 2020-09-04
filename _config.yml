@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://senkoi.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -120,6 +120,15 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/Senkoi/Senkoi.github.io
-  branch: master
+  - type: git
+    repo: https://github.com/Senkoi/Senkoi.github.io
+    branch: master
+  - type: leancloud_counter_security_sync
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: HoXQDOyw5DNsLoJHae80AWku-MdYXbMMI
+  app_key: ezhVEVt38vL2EoFqJf8C8hUE
+  server_url: #https://senkoi.github.io/
+  username: senkoi
+  password: woaixuexi
