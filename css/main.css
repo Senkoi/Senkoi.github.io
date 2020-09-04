@@ -1199,7 +1199,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #1cbecf;
+  background: #ffb488;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2431,6 +2431,7 @@ body {
   position: relative;
   padding: 0 1em;
   background-color: rgba(255,255,255,0.5);
+  transform: translateY(0.1px);
   transition: all 0.3s;
   border-radius: 3px;
 }
@@ -2440,7 +2441,7 @@ body {
   transform: translateY(-1px);
 }
 .followme {
-  position: absolute;
+  position: fixed;
   left: var(--ball-left);
   top: var(--ball-top);
   margin: 0;

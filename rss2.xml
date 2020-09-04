@@ -4,18 +4,41 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>UNDERCURRENT</title>
-    <link>http://yoursite.com/</link>
+    <link>https://senkoi.github.io/</link>
     
-    <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://senkoi.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 24 Aug 2020 15:03:36 GMT</pubDate>
+    <pubDate>Fri, 04 Sep 2020 13:31:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>使用LeanClound在hexo next主题上统计文章访问量 添加热度显示</title>
+      <link>https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/</link>
+      <guid>https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/</guid>
+      <pubDate>Fri, 04 Sep 2020 08:14:46 GMT</pubDate>
+      
+      <description>&lt;p&gt;照着网上找到的几个教程做了一遍,发现并不能正常工作。修修改改后。终于能使用了！ &lt;/p&gt;
+&lt;h1 id=&quot;1-注册leancloud-国际版&quot;&gt;&lt;a href=&quot;#1-注册leancloud-国际版&quot; class=&quot;headerlink&quot; title=&quot;1.注册leancloud 国际版&quot;&gt;&lt;/a&gt;1.注册leancloud &lt;strong&gt;国际版&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://console.leancloud.app/login.html#/signin&quot;&gt;注册页面&lt;/a&gt; 右上角切换为国际版,否则需要备案域名。&lt;/p&gt;
+&lt;img src=&quot;/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/guoji.png&quot; class=&quot;&quot; title=&quot;This is an image&quot;&gt;</description>
+      
+      
+      
+      
+      <category domain="https://senkoi.github.io/categories/%E6%8A%98%E8%85%BE/">折腾</category>
+      
+      
+      <category domain="https://senkoi.github.io/tags/hexo/">hexo</category>
+      
+      
+      <comments>https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>css相关汇总</title>
-      <link>http://yoursite.com/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/</link>
-      <guid>http://yoursite.com/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/</guid>
+      <link>https://senkoi.github.io/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/</link>
+      <guid>https://senkoi.github.io/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/</guid>
       <pubDate>Mon, 24 Aug 2020 13:51:51 GMT</pubDate>
       
       <description>&lt;img src=&quot;/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/CSS3.png&quot; class=&quot;&quot;&gt;
@@ -24,22 +47,22 @@
       
       
       
-      <category domain="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/">前端知识</category>
+      <category domain="https://senkoi.github.io/categories/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/">前端知识</category>
       
       
-      <category domain="http://yoursite.com/tags/html-css/">html/css</category>
+      <category domain="https://senkoi.github.io/tags/html-css/">html/css</category>
       
-      <category domain="http://yoursite.com/tags/%E6%A2%B3%E7%90%86/">梳理</category>
+      <category domain="https://senkoi.github.io/tags/%E6%A2%B3%E7%90%86/">梳理</category>
       
       
-      <comments>http://yoursite.com/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/#disqus_thread</comments>
+      <comments>https://senkoi.github.io/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>记一次hexo多终端同步</title>
-      <link>http://yoursite.com/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/</link>
-      <guid>http://yoursite.com/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/</guid>
+      <link>https://senkoi.github.io/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/</link>
+      <guid>https://senkoi.github.io/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/</guid>
       <pubDate>Sat, 22 Aug 2020 10:36:41 GMT</pubDate>
       
       <description>&lt;h3 id=&quot;将笔记本A中的hexo迁移至其它电脑B中。&quot;&gt;&lt;a href=&quot;#将笔记本A中的hexo迁移至其它电脑B中。&quot; class=&quot;headerlink&quot; title=&quot;将笔记本A中的hexo迁移至其它电脑B中。&quot;&gt;&lt;/a&gt;将笔记本A中的hexo迁移至其它电脑B中。&lt;/h3&gt;&lt;ol&gt;
@@ -48,20 +71,20 @@
       
       
       
-      <category domain="http://yoursite.com/categories/%E6%8A%98%E8%85%BE/">折腾</category>
+      <category domain="https://senkoi.github.io/categories/%E6%8A%98%E8%85%BE/">折腾</category>
       
       
-      <category domain="http://yoursite.com/tags/hexo/">hexo</category>
+      <category domain="https://senkoi.github.io/tags/hexo/">hexo</category>
       
       
-      <comments>http://yoursite.com/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/#disqus_thread</comments>
+      <comments>https://senkoi.github.io/2020/08/22/%E8%AE%B0%E4%B8%80%E6%AC%A1hexo%E5%A4%9A%E7%BB%88%E7%AB%AF%E5%90%8C%E6%AD%A5/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>容易忘掉</title>
-      <link>http://yoursite.com/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/</link>
-      <guid>http://yoursite.com/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/</guid>
+      <link>https://senkoi.github.io/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/</link>
+      <guid>https://senkoi.github.io/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/</guid>
       <pubDate>Wed, 19 Aug 2020 14:47:56 GMT</pubDate>
       
       <description>&lt;ul&gt;
@@ -70,22 +93,22 @@
       
       
       
-      <category domain="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/">前端知识</category>
+      <category domain="https://senkoi.github.io/categories/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/">前端知识</category>
       
       
-      <category domain="http://yoursite.com/tags/html-css/">html/css</category>
+      <category domain="https://senkoi.github.io/tags/html-css/">html/css</category>
       
-      <category domain="http://yoursite.com/tags/%E8%AE%B0%E4%BD%8F/">记住!</category>
+      <category domain="https://senkoi.github.io/tags/%E8%AE%B0%E4%BD%8F/">记住!</category>
       
       
-      <comments>http://yoursite.com/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/#disqus_thread</comments>
+      <comments>https://senkoi.github.io/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>START</title>
-      <link>http://yoursite.com/2020/08/19/start/</link>
-      <guid>http://yoursite.com/2020/08/19/start/</guid>
+      <link>https://senkoi.github.io/2020/08/19/start/</link>
+      <guid>https://senkoi.github.io/2020/08/19/start/</guid>
       <pubDate>Wed, 19 Aug 2020 13:04:28 GMT</pubDate>
       
       <description>&lt;h1 id=&quot;START&quot;&gt;&lt;a href=&quot;#START&quot; class=&quot;headerlink&quot; title=&quot;START&quot;&gt;&lt;/a&gt;START&lt;/h1&gt;&lt;p&gt;From &lt;strong&gt;here&lt;/strong&gt; on&lt;br&gt;&lt;strong&gt;Find&lt;/strong&gt; your limit&lt;br&gt;&lt;strong&gt;Get to&lt;/strong&gt; it  &lt;/p&gt;</description>
@@ -94,10 +117,10 @@
       
       
       
-      <category domain="http://yoursite.com/tags/flag/">flag</category>
+      <category domain="https://senkoi.github.io/tags/flag/">flag</category>
       
       
-      <comments>http://yoursite.com/2020/08/19/start/#disqus_thread</comments>
+      <comments>https://senkoi.github.io/2020/08/19/start/#disqus_thread</comments>
       
     </item>
     

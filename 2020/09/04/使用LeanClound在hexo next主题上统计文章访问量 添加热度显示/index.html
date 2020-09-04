@@ -21,15 +21,23 @@
     var CONFIG = {"hostname":"senkoi.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Muse | Mist":320,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="UNDERCURRENT">
-<meta property="og:url" content="https://senkoi.github.io/tags/%E8%AE%B0%E4%BD%8F/index.html">
+  <meta name="description" content="照着网上找到的几个教程做了一遍,发现并不能正常工作。修修改改后。终于能使用了！  1.注册leancloud 国际版注册页面 右上角切换为国际版,否则需要备案域名。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用LeanClound在hexo next主题上统计文章访问量 添加热度显示">
+<meta property="og:url" content="https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/index.html">
 <meta property="og:site_name" content="UNDERCURRENT">
+<meta property="og:description" content="照着网上找到的几个教程做了一遍,发现并不能正常工作。修修改改后。终于能使用了！  1.注册leancloud 国际版注册页面 右上角切换为国际版,否则需要备案域名。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/guoji.png">
+<meta property="og:image" content="https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/appid.png">
+<meta property="article:published_time" content="2020-09-04T08:14:46.000Z">
+<meta property="article:modified_time" content="2020-09-04T13:31:42.508Z">
 <meta property="article:author" content="Senkoi">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/guoji.png">
 
-<link rel="canonical" href="https://senkoi.github.io/tags/%E8%AE%B0%E4%BD%8F/">
+<link rel="canonical" href="https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/">
 
 
 <script id="page-configurations">
@@ -37,12 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: 记住! | UNDERCURRENT</title>
+  <title>使用LeanClound在hexo next主题上统计文章访问量 添加热度显示 | UNDERCURRENT</title>
   
 
 
@@ -159,51 +167,140 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">记住!
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://senkoi.github.io/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Senkoi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="UNDERCURRENT">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用LeanClound在hexo next主题上统计文章访问量 添加热度显示
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-04 16:14:46 / 修改时间：21:31:42" itemprop="dateCreated datePublished" datetime="2020-09-04T16:14:46+08:00">2020-09-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%98%E8%85%BE/" itemprop="url" rel="index"><span itemprop="name">折腾</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/" class="post-meta-item leancloud_visitors" data-flag-title="使用LeanClound在hexo next主题上统计文章访问量 添加热度显示" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <p>照着网上找到的几个教程做了一遍,发现并不能正常工作。修修改改后。终于能使用了！ </p>
+<h1 id="1-注册leancloud-国际版"><a href="#1-注册leancloud-国际版" class="headerlink" title="1.注册leancloud 国际版"></a>1.注册leancloud <strong>国际版</strong></h1><p><a target="_blank" rel="noopener" href="https://console.leancloud.app/login.html#/signin">注册页面</a> 右上角切换为国际版,否则需要备案域名。</p>
+<img src="/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/guoji.png" class="" title="This is an image">  
+<a id="more"></a>
+<p>接下来新建一个应用。成功之后,点击存储 -&gt; 点击结构化数据 -&gt; 点击创建class -&gt; 创建一个名为<code>Counter</code>的class (名字必须是Counter，否则next无法正常工作)  </p>
+<p>找到图示界面,记录下AppID、AppKey。AppID后缀为<code>-MdYXbMMI</code>才是国际版账号。</p>
+<img src="/2020/09/04/%E4%BD%BF%E7%94%A8LeanClound%E5%9C%A8hexo%20next%E4%B8%BB%E9%A2%98%E4%B8%8A%E7%BB%9F%E8%AE%A1%E6%96%87%E7%AB%A0%E8%AE%BF%E9%97%AE%E9%87%8F%20%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%98%BE%E7%A4%BA/appid.png" class="" title="This is an image">  
+
+<h1 id="2-配置"><a href="#2-配置" class="headerlink" title="2.配置"></a>2.配置</h1><p>其中有一坑,一定要配置站点_config.yml文件中的url。在访问文章时,会检测站点的url与配置的是否相同,不相同的话则不会计数,阅读量一直为零。<br><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/LEANCLOUD-COUNTER-SECURITY.md">https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/LEANCLOUD-COUNTER-SECURITY.md</a>  </p>
+<h1 id="3-添加热度排行页面"><a href="#3-添加热度排行页面" class="headerlink" title="3.添加热度排行页面"></a>3.添加热度排行页面</h1><p>终端进入到hexo目录 <code>hexo n page hot</code> 新建一个hot页面, 打开hot/index.md。此处放上其他blog中的代码后,我访问此页面时控制台总是返回401。这里放上修改后的代码，将其中APPID、APPKEY替换成自己的。<code>hexo clean hexo g hexo d</code>后访问页面查看是否成功。</p>
+<pre><code>---
+title: 文章热度排行
+date: 2020-09-04 00:14:32
+comments: false
+---
+&lt;div id=&quot;hot&quot;&gt;&lt;/div&gt;
+&lt;script src=&quot;//cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+AV.init(&#123;
+  appId: &quot;APPID&quot;,
+  appKey: &quot;APPKEY&quot;,
+&#125;);
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var time=0
+  var title=&quot;&quot;
+  var url=&quot;&quot;
+  var query = new AV.Query(&#39;Counter&#39;);
+  query.notEqualTo(&#39;id&#39;,0);
+  query.descending(&#39;time&#39;);
+  query.limit(1000);
+  query.find().then(function (todo) &#123;
+    for (var i=0;i&lt;1000;i++)&#123;
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      var content=&quot;&lt;p&gt;&quot;+&quot;&lt;font color=&#39;#1C1C1C&#39;&gt;&quot;+&quot;【文章热度:&quot;+time+&quot;℃】&quot;+&quot;&lt;/font&gt;&quot;+&quot;&lt;a href=&#39;&quot;+&quot;https://senkoi.github.io/&quot;+url+&quot;&#39;&gt;&quot;+title+&quot;&lt;/a&gt;&quot;+&quot;&lt;/p&gt;&quot;;
+      document.getElementById(&quot;hot&quot;).innerHTML+=content
+    &#125;
+  &#125;, function (error) &#123;
+    console.log(&quot;error&quot;);
+  &#125;);
+&lt;/script&gt;</code></pre>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-08-19T22:47:56+08:00"
-              content="2020-08-19">
-          08-19
-        </time>
-      </div>
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/08/19/%E5%AE%B9%E6%98%93%E5%BF%98%E6%8E%89/" itemprop="url">
-            <span itemprop="name">容易忘掉</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/24/css%E7%9B%B8%E5%85%B3%E6%B1%87%E6%80%BB/" rel="prev" title="css相关汇总">
+      <i class="fa fa-chevron-left"></i> css相关汇总
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -256,6 +353,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E6%B3%A8%E5%86%8Cleancloud-%E5%9B%BD%E9%99%85%E7%89%88"><span class="nav-number">1.</span> <span class="nav-text">1.注册leancloud 国际版</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">2.配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E6%B7%BB%E5%8A%A0%E7%83%AD%E5%BA%A6%E6%8E%92%E8%A1%8C%E9%A1%B5%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">3.添加热度排行页面</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
